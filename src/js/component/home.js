@@ -4,8 +4,7 @@ export class Home extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			myArray: [],
-			input: ""
+			myArray: []
 		};
 	}
 	render() {
@@ -17,12 +16,12 @@ export class Home extends React.Component {
 						onKeyPress={e => {
 							if (e.key === "Enter") {
 								this.setState({
-									input: e.target.value,
 									myArray: this.state.myArray.concat(
 										e.target.value
 									)
 								});
-								this.setState({ input: (e.target.value = "") });
+
+								e.target.value = "";
 							}
 						}}
 					/>
