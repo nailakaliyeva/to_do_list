@@ -32,7 +32,7 @@ export class Home extends React.Component {
 								className="col-6 list-group-item mx-auto d-flex justify-content-between">
 								{item}
 								<i
-									className="fas fa-times"
+									className="fas fa-times text-danger"
 									onClick={() => {
 										this.setState({
 											array: this.state.myArray.splice(
