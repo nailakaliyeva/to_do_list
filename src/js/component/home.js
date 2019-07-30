@@ -4,7 +4,8 @@ export class Home extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			myArray: []
+			myArray: [],
+			input: ""
 		};
 	}
 	render() {
@@ -16,10 +17,12 @@ export class Home extends React.Component {
 						onKeyPress={e => {
 							if (e.key === "Enter") {
 								this.setState({
+									input: e.target.value,
 									myArray: this.state.myArray.concat(
 										e.target.value
 									)
 								});
+								this.setState({ input: (e.target.value = "") });
 							}
 						}}
 					/>
@@ -29,7 +32,6 @@ export class Home extends React.Component {
 								key={index}
 								className="col-6 list-group-item mx-auto d-flex justify-content-between">
 								{item}
-
 								<i
 									className="fas fa-times"
 									onClick={() => {
