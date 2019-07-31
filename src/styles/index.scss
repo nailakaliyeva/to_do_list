@@ -1,13 +1,11 @@
 @import "~bootstrap/scss/bootstrap.scss";
+html, body{
+height:100%;
+}
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
