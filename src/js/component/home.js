@@ -10,6 +10,7 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<div>
+				<div className="text-center text mt-5">TO-DO LIST</div>
 				<ul className="list-group">
 					<input
 						className="col-6 mx-auto mt-5"
